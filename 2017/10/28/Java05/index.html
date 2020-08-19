@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java初次见面，请多关照——01, 编程，生活，音乐，游戏，动漫">
+    <meta name="keywords" content="Java终生学习，面向对象——05, 编程，生活，音乐，游戏，动漫">
     <meta name="description" content="吃饱喝足，努力进步">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java初次见面，请多关照——01 | 准时不早退的查宁</title>
+    <title>Java终生学习，面向对象——05 | 准时不早退的查宁</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java初次见面，请多关照——01</h1>
+                    <h1 class="description center-align post-title">Java终生学习，面向对象——05</h1>
                 </div>
             </div>
         </div>
@@ -458,7 +458,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2017-09-19
+                    2017-10-28
                 </div>
                 
 
@@ -474,95 +474,60 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="一：Java开发环境"><a href="#一：Java开发环境" class="headerlink" title="一：Java开发环境"></a>一：Java开发环境</h2><h3 id="1、常用的DOS命令"><a href="#1、常用的DOS命令" class="headerlink" title="1、常用的DOS命令"></a>1、常用的DOS命令</h3><pre><code>1.1、怎么打开DOS命令   窗口
-win键 + r （组合键）：可以打开“运行”窗口
-在运行窗口文本框中输入: cmd
-然后回车
+                <h1 id="Java面向对象"><a href="#Java面向对象" class="headerlink" title="Java面向对象"></a>Java面向对象</h1><h2 id="一：面向对象包括三大特征（四大）"><a href="#一：面向对象包括三大特征（四大）" class="headerlink" title="一：面向对象包括三大特征（四大）"></a>一：面向对象包括三大特征（四大）</h2><pre><code>抽象
+封装
+继承
+多态
 
-1.2、什么是DOS命令呢？
-在DOS命令窗口中才可以输入并执行DOS命令。
-在最初的windows计算机中没有图形界面的，只有DOS命令窗口。
-也就是说通过执行DOS命令窗口可以完全完成文件的新建、编辑、保存、删除
-等一系列操作。</code></pre>
-<h3 id="2-文本编辑快捷键"><a href="#2-文本编辑快捷键" class="headerlink" title="2.文本编辑快捷键"></a>2.文本编辑快捷键</h3><pre><code>复制  ctrl + c
-粘贴  ctrl + v
-剪切  ctrl + x
-保存  ctrl + s
+任何一个面向对象的编程语言都包括这三个特征
+例如：
+    python也有封装 继承 多态。
+    java  也有封装 继承 多态。
 
-撤销  ctrl + z
-重做  ctrl + y
+java只是面向对象编程语言中的一种。
+    除了java之外，还有其它很多很多的编程语言也是面向对象的。</code></pre>
+<h2 id="二：类和对象的概念"><a href="#二：类和对象的概念" class="headerlink" title="二：类和对象的概念"></a>二：类和对象的概念</h2><pre><code>  类 -- 【实例化】--&gt; 对象(实例)
+对象 --【抽象】--&gt; 类
+类 = 属性 + 方法</code></pre>
+<h2 id="三：类的定义"><a href="#三：类的定义" class="headerlink" title="三：类的定义"></a>三：类的定义</h2><pre><code>[修饰符列表] class 类名 &#123;
+        //类体 = 属性 + 方法
+        // 属性在代码上以“变量”的形式存在（描述状态）
+        // 方法描述动作/行为
+    &#125;
 
-回到行首：home键
-回到行尾：end键
+    ps:修饰符列表可以省略。</code></pre>
+<h2 id="三：对象的定义"><a href="#三：对象的定义" class="headerlink" title="三：对象的定义"></a>三：对象的定义</h2><pre><code>对象又被称为实例。
+实例变量实际上就是：对象级别的变量。</code></pre>
+<h2 id="四：对象和引用的区别"><a href="#四：对象和引用的区别" class="headerlink" title="四：对象和引用的区别"></a>四：对象和引用的区别</h2><pre><code>对象：
+通过new出来的，在堆内存中存储。
 
-当光标在行尾，怎么选中一行？
-    shift + home键
-当光标在行首，怎么选中一行？
-    shift + end键
+引用：
+但凡是变量，并且该变量中保存了内存地址指向了堆内存当中的对象。</code></pre>
+<h2 id="五：面向对象的首要特征：封装"><a href="#五：面向对象的首要特征：封装" class="headerlink" title="五：面向对象的首要特征：封装"></a>五：面向对象的首要特征：封装</h2><pre><code>封装的作用：
+    第一个作用：保证内部结构的安全。
+    第二个作用：屏蔽复杂，暴露简单。
+怎么进行封装，代码怎么实现？
+    第一步：属性私有化（使用private关键字进行修饰。）
+    第二步：1个属性对外提供两个set和get方法。外部程序只能通过set方法修改，只能通过get方法读取
+    (set和get方法都是实例方法，不能带static。
+    不带static的方法称为实例方法，实例方法的调用必须先new对象。)
 
-回到文件头：ctrl + home
-回到文件尾：ctrl + end
-
-全选：ctrl + a
-
-查找：ctrl + f
-
-选中一个单词：鼠标双击
-选中一行：鼠标连续击3次
-
-不用鼠标选中一个单词：ctrl + shift + 右箭头/左箭头</code></pre>
-<h2 id="二：数据类型-8种"><a href="#二：数据类型-8种" class="headerlink" title="二：数据类型(8种)"></a>二：数据类型(8种)</h2><h3 id="1-基本数据类型"><a href="#1-基本数据类型" class="headerlink" title="1.基本数据类型"></a>1.基本数据类型</h3><pre><code>Byte(-128-127)   
-
-short 
-
-int(-2^31-2^31-1) 
-
-long
-
-float
-
-double
-
-boolean
-
-char  (1 2 4 8 4 8 1 2)</code></pre>
-<h3 id="2-引用数据类型"><a href="#2-引用数据类型" class="headerlink" title="2.引用数据类型"></a>2.引用数据类型</h3><pre><code>字符串型String属于引用数据类型。
-String字符串不属于基本数据类型范畴。
-java中除了基本数据类型之外，剩下的都是引用数据类型。
-引用数据类型后期面向对象的时候才会接触。</code></pre>
-<h3 id="3-类型转换的时候需要遵循哪些规则？"><a href="#3-类型转换的时候需要遵循哪些规则？" class="headerlink" title="3.类型转换的时候需要遵循哪些规则？"></a>3.类型转换的时候需要遵循哪些规则？</h3><pre><code>第一条：八种基本数据类型中，除 boolean 类型不能转换，剩下七种类型之间都可以
-进行转换；
-
-第二条：如果整数型字面量没有超出 byte,short,char 的取值范围，可以直接将其赋
-值给byte,short,char 类型的变量；
-
-第三条：小容量向大容量转换称为自动类型转换，容量从小到大的排序为：
-byte &lt; short(char) &lt; int &lt; long &lt; float &lt; double，其中 short和 char 
-都占用两个字节，但是char 可以表示更大的正整数；
-
-第四条：大容量转换成小容量，称为强制类型转换，编写时必须添加“强制类型转换符”，
-但运行时可能出现精度损失，谨慎使用；
-
-第五条：byte,short,char 类型混合运算时，先各自转换成 int 类型再做运算；
-
-第六条：多种数据类型混合运算，各自先转换成容量最大的那一种再做运算；</code></pre>
-<h3 id="4-运算符"><a href="#4-运算符" class="headerlink" title="4.运算符"></a>4.运算符</h3><pre><code>算术运算符：
-    + - * / % ++ --
-
-关系运算符：
-    &gt; &gt;= &lt; &lt;= == != 
-
-逻辑运算符：
-    &amp; | ! &amp;&amp; ||
-
-赋值运算符：
-    = += -= *= /= %=
-
-三目运算符：
-    布尔表达式 ? 表达式1 : 表达式2
-
-字符串连接运算符：
-    +</code></pre>
+Set
+public void set+属性名首字母大写(1个参数)&#123;
+                xxx = 1个参数;
+            &#125;
+get
+public 返回值类型 get+属性名首字母大写(无参)&#123;
+                return xxx;
+            &#125;</code></pre>
+<h2 id="六：static关键字"><a href="#六：static关键字" class="headerlink" title="六：static关键字"></a>六：static关键字</h2><pre><code>static修饰的统一都是静态的，都是类相关的，不需要new对象。直接采用“类名.”访问。
+当一个属性是类级别的属性，所有对象的这个属性的值是一样的，建议定义为静态变量。</code></pre>
+<h2 id="七：this关键字"><a href="#七：this关键字" class="headerlink" title="七：this关键字"></a>七：this关键字</h2><pre><code>1.1、this是一个关键字，是一个引用，保存内存地址指向自身。
+1.2、this可以使用在实例方法中，也可以使用在构造方法中。
+1.3、this出现在实例方法中其实代表的是当前对象。
+1.4、this不能使用在静态方法中。
+1.5、this. 大部分情况下可以省略，但是用来区分局部变量和实例变量的时候不能省略。
+1.6、this() 这种语法只能出现在构造方法第一行，表示当前构造方法调用本类其他的构造方法，目的是代码复用。</code></pre>
 
             </div>
             <hr/>
@@ -588,7 +553,7 @@ byte &lt; short(char) &lt; int &lt; long &lt; float &lt; double，其中 short�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://chaningQAQ.github.io/2017/09/19/Java01/">http://chaningQAQ.github.io/2017/09/19/Java01/</a>
+                    <a href="http://chaningQAQ.github.io/2017/10/28/Java05/">http://chaningQAQ.github.io/2017/10/28/Java05/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -799,28 +764,24 @@ byte &lt; short(char) &lt; int &lt; long &lt; float &lt; double，其中 short�
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2017/09/30/Java02/">
+                <a href="/2017/11/18/Java06/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Java终生学习，戒骄戒躁——02">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Java终生学习，继承和多态——06">
                         
-                        <span class="card-title">Java终生学习，戒骄戒躁——02</span>
+                        <span class="card-title">Java终生学习，继承和多态——06</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java 01一：控制语句2.1、控制语句的出现可以让我们的程序具有逻辑性/条理性，可以使用控制语句来实现一个“业务”了。
-2.2、控制语句包括几类？    3类：
-        选择语句
-        循环语句
-        转向语
+                            Java中的继承和多态一：继承extends什么是继承，有什么用？        继承的作用：            基本作用：子类继承父类，代码可以得到复用。（ 基本作用。）            主要作用：因为有了继承关系，才有了方法覆
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2017-09-30
+                            <i class="far fa-clock fa-fw icon-date"></i>2017-11-18
                         </span>
                         <span class="publish-author">
                             
@@ -852,35 +813,37 @@ byte &lt; short(char) &lt; int &lt; long &lt; float &lt; double，其中 short�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2017/09/01/myfirstblog/">
+                <a href="/2017/10/28/Java04/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="我的第一篇博客">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Java终生学习，关于方法——04">
                         
-                        <span class="card-title">我的第一篇博客</span>
+                        <span class="card-title">Java终生学习，关于方法——04</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            生活不易，小查叹气这是我第一篇博客，也不知道写个啥，总之加油吧！
-尽管大学不如我所愿，但我会在尘埃落定前奋力一搏。加油！
-直播我的直播间
-点个关注大伙！
+                            Java中的方法一：方法重载overload1.1、什么情况下我们考虑使用方法重载机制？
+    当功能相似的时候，建议将方法名定义为一致的，
+    这样代码美观，又方便编程。
 
+    注意：如果功能不相似，坚决要让方法名不一致。
+
+1
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-09-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2017-10-28
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%94%9F%E6%B4%BB/" class="post-category">
-                                    生活
+                            <a href="/categories/Javase/" class="post-category">
+                                    Javase
                                 </a>
                             
                             
@@ -890,8 +853,8 @@ byte &lt; short(char) &lt; int &lt; long &lt; float &lt; double，其中 short�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%94%9F%E6%B4%BB/">
-                        <span class="chip bg-color">生活</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
                     </a>
                     
                 </div>
