@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Java终生学习，面向对象——05, 编程，生活，音乐，游戏，动漫">
+    <meta name="keywords" content="Java终生学习，String课堂笔记——11, 编程，生活，音乐，游戏，动漫">
     <meta name="description" content="吃饱喝足，努力进步">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Java终生学习，面向对象——05 | 准时不早退的查宁</title>
+    <title>Java终生学习，String课堂笔记——11 | 准时不早退的查宁</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Java终生学习，面向对象——05</h1>
+                    <h1 class="description center-align post-title">Java终生学习，String课堂笔记——11</h1>
                 </div>
             </div>
         </div>
@@ -458,7 +458,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2017-10-28
+                    2018-12-13
                 </div>
                 
 
@@ -474,60 +474,57 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Java面向对象"><a href="#Java面向对象" class="headerlink" title="Java面向对象"></a>Java面向对象</h1><h2 id="一：面向对象包括三大特征（四大）"><a href="#一：面向对象包括三大特征（四大）" class="headerlink" title="一：面向对象包括三大特征（四大）"></a>一：面向对象包括三大特征（四大）</h2><pre><code>抽象
-封装
-继承
-多态
+                <h1 id="Java中的String类"><a href="#Java中的String类" class="headerlink" title="Java中的String类"></a>Java中的String类</h1><h2 id="一：String类"><a href="#一：String类" class="headerlink" title="一：String类"></a>一：String类</h2><h3 id="1-1、对String在内存存储方面的理解："><a href="#1-1、对String在内存存储方面的理解：" class="headerlink" title="1.1、对String在内存存储方面的理解："></a>1.1、对String在内存存储方面的理解：</h3><pre><code>    第一：字符串一旦创建不可变。
+    第二：双引号括起来的字符串存储在字符串常量池中。
+    第三：字符串的比较必须使用equals方法。
+    第四：String已经重写了toString()和equals()方法。</code></pre>
+<h3 id="1-2、String的构造方法。"><a href="#1-2、String的构造方法。" class="headerlink" title="1.2、String的构造方法。"></a>1.2、String的构造方法。</h3><pre><code>    String s = &quot;abc&quot;;
+    String s = new String(&quot;abc&quot;);
+    String s = new String(byte数组);
+    String s = new String(byte数组, 起始下标, 长度);
+    String s = new String(char数组);
+    String s = new String(char数组, 起始下标, 长度);</code></pre>
+<h3 id="1-3、String类常用的21个方法。"><a href="#1-3、String类常用的21个方法。" class="headerlink" title="1.3、String类常用的21个方法。"></a>1.3、String类常用的21个方法。</h3><h2 id="二：StringBuffer-StringBuilder"><a href="#二：StringBuffer-StringBuilder" class="headerlink" title="二：StringBuffer/StringBuilder"></a>二：StringBuffer/StringBuilder</h2><h3 id="2-1、StringBuffer-StringBuilder可以看做可变长度字符串。"><a href="#2-1、StringBuffer-StringBuilder可以看做可变长度字符串。" class="headerlink" title="2.1、StringBuffer/StringBuilder可以看做可变长度字符串。"></a>2.1、StringBuffer/StringBuilder可以看做可变长度字符串。</h3><h3 id="2-2、StringBuffer-StringBuilder初始化容量16"><a href="#2-2、StringBuffer-StringBuilder初始化容量16" class="headerlink" title="2.2、StringBuffer/StringBuilder初始化容量16."></a>2.2、StringBuffer/StringBuilder初始化容量16.</h3><h3 id="2-3、StringBuffer-StringBuilder是完成字符串拼接操作的，方法名：append"><a href="#2-3、StringBuffer-StringBuilder是完成字符串拼接操作的，方法名：append" class="headerlink" title="2.3、StringBuffer/StringBuilder是完成字符串拼接操作的，方法名：append"></a>2.3、StringBuffer/StringBuilder是完成字符串拼接操作的，方法名：append</h3><h3 id="2-4、StringBuffer是线程安全的。StringBuilder是非线程安全的。"><a href="#2-4、StringBuffer是线程安全的。StringBuilder是非线程安全的。" class="headerlink" title="2.4、StringBuffer是线程安全的。StringBuilder是非线程安全的。"></a>2.4、StringBuffer是线程安全的。StringBuilder是非线程安全的。</h3><h3 id="2-5、频繁进行字符串拼接不建议使用“-”"><a href="#2-5、频繁进行字符串拼接不建议使用“-”" class="headerlink" title="2.5、频繁进行字符串拼接不建议使用“+”"></a>2.5、频繁进行字符串拼接不建议使用“+”</h3><h2 id="三：八种基本数据类型对应的包装类"><a href="#三：八种基本数据类型对应的包装类" class="headerlink" title="三：八种基本数据类型对应的包装类"></a>三：八种基本数据类型对应的包装类</h2><h3 id="1-1、什么是自动装箱和自动拆箱，代码怎么写？"><a href="#1-1、什么是自动装箱和自动拆箱，代码怎么写？" class="headerlink" title="1.1、什么是自动装箱和自动拆箱，代码怎么写？"></a>1.1、什么是自动装箱和自动拆箱，代码怎么写？</h3><pre><code>    Integer x = 100; // x里面并不是保存100，保存的是100这个对象的内存地址。
+    Integer y = 100;
+    System.out.println(x == y); // true
 
-任何一个面向对象的编程语言都包括这三个特征
-例如：
-    python也有封装 继承 多态。
-    java  也有封装 继承 多态。
-
-java只是面向对象编程语言中的一种。
-    除了java之外，还有其它很多很多的编程语言也是面向对象的。</code></pre>
-<h2 id="二：类和对象的概念"><a href="#二：类和对象的概念" class="headerlink" title="二：类和对象的概念"></a>二：类和对象的概念</h2><pre><code>  类 -- 【实例化】--&gt; 对象(实例)
-对象 --【抽象】--&gt; 类
-类 = 属性 + 方法</code></pre>
-<h2 id="三：类的定义"><a href="#三：类的定义" class="headerlink" title="三：类的定义"></a>三：类的定义</h2><pre><code>[修饰符列表] class 类名 &#123;
-        //类体 = 属性 + 方法
-        // 属性在代码上以“变量”的形式存在（描述状态）
-        // 方法描述动作/行为
+    Integer x = 128;
+    Integer y = 128;
+    System.out.println(x == y); // false</code></pre>
+<h3 id="1-2、Integer类常用方法。"><a href="#1-2、Integer类常用方法。" class="headerlink" title="1.2、Integer类常用方法。"></a>1.2、Integer类常用方法。</h3><pre><code>    Integer.valueOf()
+    Integer.parseInt(&quot;123&quot;)
+    Integer.parseInt(&quot;中文&quot;) : NumberFormatException</code></pre>
+<h3 id="1-3、Integer-String-int三种类型互相转换。"><a href="#1-3、Integer-String-int三种类型互相转换。" class="headerlink" title="1.3、Integer String int三种类型互相转换。"></a>1.3、Integer String int三种类型互相转换。</h3><h3 id="2、日期类"><a href="#2、日期类" class="headerlink" title="2、日期类"></a>2、日期类</h3><pre><code>2.1、获取系统当前时间
+    Date d = new Date();
+2.2、日期格式化：Date --&gt; String
+    yyyy-MM-dd HH:mm:ss SSS
+    SimpleDateFormat sdf = new SimpleDate(&quot;yyyy-MM-dd HH:mm:ss SSS&quot;);
+    String s = sdf.format(new Date());
+2.3、String --&gt; Date
+    SimpleDateFormat sdf = new SimpleDate(&quot;yyyy-MM-dd HH:mm:ss&quot;);
+    Date d = sdf.parse(&quot;2008-08-08 08:08:08&quot;);
+2.4、获取毫秒数
+    long begin = System.currentTimeMillis();
+    Date d = new Date(begin - 1000 * 60 * 60 * 24);</code></pre>
+<h3 id="3、数字类"><a href="#3、数字类" class="headerlink" title="3、数字类"></a>3、数字类</h3><pre><code>3.1、DecimalFormat数字格式化
+    ###,###.## 表示加入千分位，保留两个小数。
+    ###,###.0000 表示加入千分位，保留4个小数，不够补0
+3.2、BigDecimal
+    财务软件中通常使用BigDecimal</code></pre>
+<h3 id="4、随机数"><a href="#4、随机数" class="headerlink" title="4、随机数"></a>4、随机数</h3><pre><code>4.1、怎么产生int类型随机数。
+    Random r = new Random();
+    int i = r.nextInt();
+4.2、怎么产生某个范围之内的int类型随机数。
+    Random r = new Random();
+    int i = r.nextInt(101); // 产生[0-100]的随机数。</code></pre>
+<h3 id="5、枚举"><a href="#5、枚举" class="headerlink" title="5、枚举"></a>5、枚举</h3><pre><code>5.1、枚举是一种引用数据类型。
+5.2、枚举编译之后也是class文件。
+5.3、枚举类型怎么定义？
+    enum 枚举类型名&#123;
+        枚举值,枚举值2,枚举值3
     &#125;
-
-    ps:修饰符列表可以省略。</code></pre>
-<h2 id="三：对象的定义"><a href="#三：对象的定义" class="headerlink" title="三：对象的定义"></a>三：对象的定义</h2><pre><code>对象又被称为实例。
-实例变量实际上就是：对象级别的变量。</code></pre>
-<h2 id="四：对象和引用的区别"><a href="#四：对象和引用的区别" class="headerlink" title="四：对象和引用的区别"></a>四：对象和引用的区别</h2><pre><code>对象：
-通过new出来的，在堆内存中存储。
-
-引用：
-但凡是变量，并且该变量中保存了内存地址指向了堆内存当中的对象。</code></pre>
-<h2 id="五：面向对象的首要特征：封装"><a href="#五：面向对象的首要特征：封装" class="headerlink" title="五：面向对象的首要特征：封装"></a>五：面向对象的首要特征：封装</h2><pre><code>封装的作用：
-    第一个作用：保证内部结构的安全。
-    第二个作用：屏蔽复杂，暴露简单。
-怎么进行封装，代码怎么实现？
-    第一步：属性私有化（使用private关键字进行修饰。）
-    第二步：1个属性对外提供两个set和get方法。外部程序只能通过set方法修改，只能通过get方法读取
-    (set和get方法都是实例方法，不能带static。
-    不带static的方法称为实例方法，实例方法的调用必须先new对象。)
-
-Set
-public void set+属性名首字母大写(1个参数)&#123;
-                xxx = 1个参数;
-            &#125;
-get
-public 返回值类型 get+属性名首字母大写(无参)&#123;
-                return xxx;
-            &#125;</code></pre>
-<h2 id="六：static关键字"><a href="#六：static关键字" class="headerlink" title="六：static关键字"></a>六：static关键字</h2><pre><code>static修饰的统一都是静态的，都是类相关的，不需要new对象。直接采用“类名.”访问。
-当一个属性是类级别的属性，所有对象的这个属性的值是一样的，建议定义为静态变量。</code></pre>
-<h2 id="七：this关键字"><a href="#七：this关键字" class="headerlink" title="七：this关键字"></a>七：this关键字</h2><pre><code>1.1、this是一个关键字，是一个引用，保存内存地址指向自身。
-1.2、this可以使用在实例方法中，也可以使用在构造方法中。
-1.3、this出现在实例方法中其实代表的是当前对象。
-1.4、this不能使用在静态方法中。
-1.5、this. 大部分情况下可以省略，但是用来区分局部变量和实例变量的时候不能省略。
-1.6、this() 这种语法只能出现在构造方法第一行，表示当前构造方法调用本类其他的构造方法，目的是代码复用。</code></pre>
+5.4、当一个方法执行结果超过两种情况，并且是一枚一枚可以列举出来
+的时候，建议返回值类型设计为枚举类型。</code></pre>
 
             </div>
             <hr/>
@@ -553,7 +550,7 @@ public 返回值类型 get+属性名首字母大写(无参)&#123;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://chaningQAQ.github.io/2017/10/28/Java05/">http://chaningQAQ.github.io/2017/10/28/Java05/</a>
+                    <a href="http://chaningQAQ.github.io/2018/12/13/Java11/">http://chaningQAQ.github.io/2018/12/13/Java11/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -764,30 +761,27 @@ public 返回值类型 get+属性名首字母大写(无参)&#123;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2017/10/28/Java04/">
+                <a href="/2019/01/03/Java12/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Java终生学习，关于方法——04">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Java终生学习，异常课堂笔记——12">
                         
-                        <span class="card-title">Java终生学习，关于方法——04</span>
+                        <span class="card-title">Java终生学习，异常课堂笔记——12</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java中的方法一：方法重载overload1.1、什么情况下我们考虑使用方法重载机制？
-    当功能相似的时候，建议将方法名定义为一致的，
-    这样代码美观，又方便编程。
-
-    注意：如果功能不相似，坚决要让方法名不一致。
-
-1
+                            Java中的异常（Exception）异常（Exception）异常处理机制
+1、java中异常的作用是：增强程序健壮性。
+2、java中异常以类和对象的形式存在。
+一：java的异常处理机制1.1、异常在java中以类和对象的形式存在。那
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2017-10-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-01-03
                         </span>
                         <span class="publish-author">
                             
@@ -819,29 +813,28 @@ public 返回值类型 get+属性名首字母大写(无参)&#123;
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2017/10/17/Java03/">
+                <a href="/2018/10/03/Java10/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Java终生学习，关于方法——03">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Java终生学习，数组课堂笔记——10">
                         
-                        <span class="card-title">Java终生学习，关于方法——03</span>
+                        <span class="card-title">Java终生学习，数组课堂笔记——10</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Java中的方法1、方法是什么？方法是一段可以完成某个特定功能的并且可以被重复利用的代码片段。
-方法的出现，让代码具有了很强的复用性。
-2、方法最难实现的是：根据业务怎么进行方法的抽取。
-方法的返回值类型定义为什么？
-方法的名字叫什么？
-方
+                            Java中的数组一：数组1.1、数组的优点和缺点，并且要理解为什么。    第一：空间存储上，内存地址是连续的。
+    第二：每个元素占用的空间大小相同。
+    第三：知道首元素的内存地址。
+    第四：通过下标可以计算出偏移量。
+ 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2017-10-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2018-10-03
                             </span>
                         <span class="publish-author">
                             
@@ -1050,7 +1043,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
-            <span id="year">2018</span>
+            <span id="year">2017</span>
             <a href="/about" target="_blank">chaning</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
