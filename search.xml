@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>浅尝代理模式</title>
+      <link href="/2020/09/25/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/"/>
+      <url>/2020/09/25/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<p>#代理模式（静态代理）</p><h2 id="代码步骤"><a href="#代码步骤" class="headerlink" title="代码步骤"></a>代码步骤</h2><p>1.接口</p><pre><code>public interface Rent &#123;    public void Rent();&#125;</code></pre><p>2.真实角色</p><pre><code>public class Host implements Rent&#123;    public void Rent() &#123;        System.out.println(&quot;房东要出租房子咯~&quot;);    &#125;&#125;</code></pre><p>3.代理角色</p><pre><code>public class zhongjie implements Rent &#123;    private Host host;    public zhongjie() &#123;    &#125;    public zhongjie(Host host) &#123;        this.host = host;    &#125;    public void Rent() &#123;        host.Rent();        fare();        hetong();        seeHouse();    &#125;    public void fare()&#123;        System.out.println(&quot;中介要收米！&quot;);    &#125;    public void hetong()&#123;        System.out.println(&quot;中介给您签合同&quot;);    &#125;    public void seeHouse()&#123;        System.out.println(&quot;中介带你看房子！&quot;);    &#125;&#125;</code></pre><p>4.客户端</p><pre><code>public class keren &#123;    public static void main(String[] args) &#123;        //房东出租房子        Host host = new Host();        //中介帮忙        zhongjie zhongjie = new zhongjie(host);        //中介一系列        zhongjie.Rent();    &#125;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 23种设计模式 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>浅尝动态代理</title>
+      <link href="/2020/09/25/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%2002/"/>
+      <url>/2020/09/25/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%2002/</url>
+      
+        <content type="html"><![CDATA[<p>#代理模式（动态代理）</p><h2 id="需要了解两个类"><a href="#需要了解两个类" class="headerlink" title="需要了解两个类"></a>需要了解两个类</h2><h3 id="1-Proxy"><a href="#1-Proxy" class="headerlink" title="1.Proxy"></a>1.Proxy</h3><h3 id="2-InvocationHandler"><a href="#2-InvocationHandler" class="headerlink" title="2. InvocationHandler"></a>2. InvocationHandler</h3><h3 id="工具类的实现"><a href="#工具类的实现" class="headerlink" title="工具类的实现"></a>工具类的实现</h3><pre><code>public class ProxyInvocationHandler implements InvocationHandler &#123;//抽象成工具类    private Object taget;    public void setTaget(Object taget)&#123;        this.taget=taget;    &#125;    //Proxy生成得到代理类    public Object getProxy()&#123;    return   Proxy.newProxyInstance(this.getClass().getClassLoader(),taget.getClass().getInterfaces(),this);    &#125;    //处理代理实例， 返回结果    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable &#123;        //反射获得方法名        log(method.getName());        Object result = method.invoke(taget, args);        return result;    &#125;    public void log(String msg)&#123;        System.out.println(&quot;【Debug】实现了&quot;+msg+&quot;方法&quot;);    &#125;&#125;</code></pre><h3 id="ServiceImpl"><a href="#ServiceImpl" class="headerlink" title="ServiceImpl"></a>ServiceImpl</h3><pre><code>public class UserSeviceImpl implements UserService &#123;public void add() &#123;    System.out.println(&quot;add&quot;);&#125;public void delete() &#123;    System.out.println(&quot;delete&quot;);&#125;public void update() &#123;    System.out.println(&quot;update&quot;);&#125;public void query() &#123;    System.out.println(&quot;query&quot;);&#125;</code></pre><p>}</p><h3 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h3><pre><code>public class Client &#123;public static void main(String[] args) &#123;    UserSeviceImpl userSevice = new UserSeviceImpl();    ProxyInvocationHandler pih = new ProxyInvocationHandler();    pih.setTaget(userSevice);    UserService proxy = (UserService) pih.getProxy();    proxy.add();&#125;</code></pre><p>}</p><h3 id="动态代理的好处"><a href="#动态代理的好处" class="headerlink" title="动态代理的好处"></a>动态代理的好处</h3><pre><code>1.公共业务发生扩展的时候方便集中管理2.一个动态代理类代理的一般是一个接口，对应一个业务类3.一个动态代理类可以实现代理多个类，只要实现同一接口即可</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 23种设计模式 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>来偷我的狐狸了 大伙儿^^</title>
       <link href="/2020/09/16/%E9%87%8D%E7%A7%98%E7%8B%90%E7%8B%B8/"/>
       <url>/2020/09/16/%E9%87%8D%E7%A7%98%E7%8B%90%E7%8B%B8/</url>
